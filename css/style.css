@@ -210,7 +210,7 @@ aside p {
     color: #0bd;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 980px) {
     h1 {
         color: #0bd;
     }
