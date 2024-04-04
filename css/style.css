@@ -120,11 +120,17 @@ footer p {
 }
 
 article {
-    width: 74%;
+    width: 60%;
+    order: 2;
 }
 
 aside {
     width: 22%;
+    order: 3;
+}
+
+.ad {
+    order: 1;
 }
 
 .news-contents {
@@ -210,7 +216,7 @@ aside p {
     color: #0bd;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 600px) {
     h1 {
         color: #0bd;
     }
@@ -250,6 +256,11 @@ aside p {
         margin-top: 30px;
     }
 
+    .menu-content {
+        margin-top: 20%;
+    }
+
+
     aside {
         margin-top: 60px;
     }
@@ -269,7 +280,7 @@ aside p {
         padding-top: 2px;
     }
 
-    .post-title{
+    .post-title {
         font-size: 1.375rem;
     }
 
@@ -278,7 +289,27 @@ aside p {
         margin-top: 10px;
     }
 
-    .post-title, .post-cat{
+    .post-title,
+    .post-cat {
         margin-left: 80px;
     }
+}
+
+#menu {
+    background-image: url(../images/menu-bg.jpg);
+    min-height: 100vh;
+}
+
+.menu-content {
+    max-width: 560px;
+    margin-top: 10%;
+}
+
+.menu-content .page-title {
+    text-align: center;
+}
+
+.menu-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
 }
