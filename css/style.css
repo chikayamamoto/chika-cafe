@@ -7,7 +7,7 @@ html {
 body {
     font-family: "Yu Gothic Midiun", "遊ゴシック Midium", YuGothic, “遊ゴシック体“, "ヒラギノ角ゴ Pro W3", sans-serif;
     line-height: 1.7;
-    color: #432;
+    color: rgb(0, 0, 0);
 }
 
 a {
@@ -19,7 +19,7 @@ img {
 }
 
 .logo {
-    width: 210px;
+    width: 100px;
     margin-top: 14px;
 }
 
@@ -36,11 +36,11 @@ img {
 }
 
 .main-nav a {
-    color: #432
+    color: azure;
 }
 
 .main-nav a:hover {
-    color: #0db;
+    color: #000;
 }
 
 .page-header {
@@ -60,11 +60,13 @@ img {
 }
 
 .home-content p {
+    color: azure;
     font-size: 1.125rem;
     margin: 10px 0 42px;
 }
 
 .page-title {
+    color: azure;
     font-size: 5rem;
     font-family: 'philosopher', serif;
     text-transform: uppercase;
@@ -73,14 +75,15 @@ img {
 
 .button {
     font-size: 1.375rem;
-    background: #0db;
     color: #fff;
     border-radius: 5px;
     padding: 18px 32px;
+    border: 1px azure solid;
 }
 
 .button:hover {
-    background: #0090aa;
+    background: azure;
+    color: #000;
 }
 
 .big-bg {
@@ -88,9 +91,12 @@ img {
     background-position: center top;
 }
 
+#news.big-bg {
+    background-position: center;
+}
+
 #home {
-    background-image: url(../images/main-bg.jpg), linear-gradient(#c9ffbf, #ffafdb);
-    background-blend-mode: luminosity;
+    background-image: url(../images/main-bg.jpg);
     min-height: 100vh;
 }
 
@@ -100,7 +106,7 @@ img {
 
 #news {
     background-image: url(../images/news-bg.jpg);
-    height: 270;
+    height: 270px;
     margin-bottom: 40px;
 }
 
@@ -330,6 +336,7 @@ aside p {
 }
 
 .menu-content p {
+    color: azure;
     font-size: 1.125rem;
     margin: 10px 0 0;
 }
@@ -351,7 +358,6 @@ aside p {
     height: 94%;
     width: 100%;
     object-fit: cover;
-
 }
 
 #contact {
@@ -364,6 +370,7 @@ aside p {
 }
 
 label {
+    color: azure;
     font-size: 1.125rem;
     margin-bottom: 10px;
     display: block;
@@ -392,9 +399,9 @@ textarea {
 }
 
 input[type="submit"] {
-    border: none;
     cursor: pointer;
     line-height: 1;
+    margin: 10px 0;
 }
 
 #location {
@@ -421,17 +428,21 @@ input[type="submit"] {
 iframe {
     width: 100%;
 }
-#sns{
+
+#sns {
     background: #FAF7F0;
     padding: 4% 0;
 }
-#sns .wrapper{
+
+#sns .wrapper {
     display: flex;
     justify-content: space-between;
 }
-#sns .sub-title{
+
+#sns .sub-title {
     margin-bottom: 30px;
 }
-.sns-box{
+
+.sns-box {
     width: 30%;
 }
